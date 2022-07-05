@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NepBag Indonesia - Belanja Tas disini aja!</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body onload="product6()">
+        <div id="home" class="logo">
+            <img src="../images/logo.png" style="width: 250px;">
+            <p>it's not about brand, it's about <b>style</b></p>
+        </div>
+        <header>
+            <ul>
+                <li><a href="../index.html#home">home</a></li>
+                <li><a href="../index.html#product">product</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <br>
+        <div class="showproduct">
+            <div class="show">
+                <div class="col4">
+                    <img src="../images/natalie bag/abucoklat.jpg" id="natalie">
+                </div> 
+                <div class="col4">
+                    <h1 style="font-size: 2vw;" id="namatas">Natalie Bag</h1>
+                    <p style="color:orange;font-size: 1.5vw;">★★★★★</p>
+                    <h4>IDR 195.000,-</h4><br>
+                    <select id="warna">
+                        <option>Select Color</option>
+                        <option>Gray</option>
+                        <option>Coffee</option>
+                    </select><br>
+                    <input type="number" value="1" id="jumlah">
+                    <a href="" class="btnExplore" onclick="beliproduct()">Buy</a>
+                    <h3>Product Details</h3><br>
+                    <p>Tas Wanita Bahan Kanvas Mix Kulit - Natalie Bag
+                        
+                        <br><br>DETAIL:
+                        <br>- Bahan kanvas mix kulit
+                        <br>- Size medium
+                        <br>- Ringan
+                        <br>- Tidak mudah luntur
+                        <br>- Space besar
+                        <br>- Barang Import
+                        <br>- Kualitas Premium
+                        <br>- Real Picture (kemiripan 100%)</p>
+                </div>
+                <div class="smallcontainer">
+                    <div class="row">
+                        <div class="col3">
+                            <a href="jihyobag.html" class="btnProduct">
+                                <img src="../images/jihyo bag/model3.jpg" class="col2img">
+                                <h4>Jihyo Bag</h4>
+                                <p>★★★★☆</p>
+                                <h5>IDR 186.000,-</h5>
+                            </a>
+                        </div>
+                        <div class="col3">
+                            <a href="suzybag.html" class="btnProduct">
+                                <img src="../images/suzy bag/biru.jpg" class="col2img">
+                                <h4>Suzy Bag</h4>
+                                <p>★★★★☆</p>
+                                <h5>IDR 150.000,-</h5>
+                            </a>
+                        </div>
+                        <div class="col3">
+                            <a href="rubbybag.html" class="btnProduct">
+                                <img src="../images/rubby bag/model1.jpg" class="col2img">
+                                <h4>Rubby Bag</h4>
+                                <p>★★★★☆</p>
+                                <h5>IDR 145.000,-</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="contact">
+            <div class="atas">
+                <div style="flex-basis:20%;">
+                    <h4>ABOUT US</h4><br>
+                    <p>NepBag merupakan Toko Tas Indonesia yang bergerak di industri fashion sejak tahun 2021. dengan aneka tas stylish dan trendy menjadikan NepBag pilihan favorit pengguna.</p><br>
+                    <p><i>NepBag is an Indonesian Bag Store that has been engaged in the fashion industry since 2021. With a variety of stylish and trendy bags, NepBag is the user's favorite choice.</i></p><br>
+                </div>
+                <form style="text-align: center;" method="POST" onsubmit="validasi()">
+                    <br>
+                    <h4>DROP US A LINE</h4>
+                    <br>
+                    <div style="text-align: left;">
+                    Your Name (required):<br>
+                    <input type="text" name="nama" id="nama" size="40"><br><br>
+                    Your Email (required):<br>
+                    <input type="text" name="email" id="email" size="40"><br><br>
+                    Subject<br>
+                    <input type="text" name="subject" id="subject" size="40"><br><br>
+                    Your Message<br>
+                    <textarea name="pesan" id="pesan" cols="40" rows="5"></textarea>
+                    <br><br>
+                    <input class="btnSend" type="submit" value="SEND">
+                    </div>
+                </form>
+                <div style="flex-basis:20%;text-align: center;">
+                    <h4>ADDRESS & CONTACT</h4><br>
+                    <address style="display: inline-block; text-align: left;">
+                        PT. Nep <br>
+                        Jl. Progo, no 12<br>
+                        Ungaran<br>
+                        Jawa Tengah<br>
+                        50514<br>
+                        08988736860<br>
+                        customerservice@nepbag.com
+                    </address>
+					<div class="sosmed">
+						<a href="https://twitter.com/hxnmi" class="btnsosmed">
+							<img src="../images/twitter.jpg" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+						<a href="https://www.instagram.com/hanifahmi/" class="btnsosmed">
+							<img src="../images/ig.png" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+						<a href="https://dinus.ac.id/mahasiswa/A11.2020.12418" class="btnsosmed">
+							<img src="../images/udinus.jpg" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+					</div>
+                </div>      
+            </div><br>
+			<div class="bawah">
+				<div>
+					<img src="../images/logo.png" style="width: 150px;">
+				</div>
+				<div style="text-align:center;">
+					<div class="jamdigital">
+						<div class="kotak">
+							<p id="jam"></p>
+						</div>
+						<div class="kotak">
+							<p id="menit"></p>
+						</div>
+						<div class="kotak">
+							<p id="detik"></p>
+						</div>
+					</div>
+					<h4 id="tanggal"></h4>
+				</div>
+			</div>
+        </footer>
+        <p style="color: #fff; background: black; padding-left: 80px; padding-right: 80px; padding-top: 10px; padding-bottom: 10px;"><b>Copyright NepBag &copy;. 2021 . Hanif Fahmi - A11.2020.12418. All Rights Reserved</b></p>
+		<script async src="../script.js"></script>
+    </body>
+</html>

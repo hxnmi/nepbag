@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NepBag Indonesia - Belanja Tas disini aja!</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color:seashell;" onload="mainindex()">
+        <div id="home" class="logo">
+            <img src="images/logo.png" style="width: 250px;">
+            <p>it's not about brand, it's about <b>style</b></p>
+        </div>
+        <header>
+            <ul>
+                <li><a href="index.html#home">home</a></li>
+                <li><a href="index.html#product">product</a></li>
+                <li><a href="#contact">contact</a></li>
+				<div id="cartinfo" class="btnCartnav">
+				<img src="images/cart.png" style="width:15px;height:15px;"> 
+					<p style="margin-bottom:0;text-transform:capitalize">&nbsp;<span id="itemcount">0 </span> barang - IDR<span class="itemtotal"></span></p>
+				</div>
+            </ul>
+        </header>
+		<div id="cart" class="cart">
+				<h3>Keranjang Belanja</h3>
+				<div class="carttotal">
+					<h5>total</h5>
+					<h5> IDR <strong id="carttotal"></strong>,-</h5>
+				</div>
+				<div class="cartbuttons">
+					<a href="" id="clearcart" class="btnExplore" onclick="clearitem()">clear cart</a>
+					<a href="" class="btnExplore" onclick="suksescheckout()">checkout</a>
+				</div>
+			</div>
+        <br>
+        <!-- home section  -->
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <h1>A New Style!</h1>
+                    <p>
+                        enjoy your day with inspiring style<br>
+                        various kinds of brands from our store can be one of them
+                    </p>
+                    <a href="index.html#product" class="btnExplore">explore</a>
+                </div>
+                <div class="col1">
+                    <img src="images/image1.jpg" style="max-width:100%; padding: 40px 0;">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="video">
+            <video controls autoplay>
+                <source src="video/mimabag.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br> 
+        <!-- product section  -->
+        <h3 id="product">New Arrival</h3>
+        <p style="color:black; font-size:16px; text-align:center; line-height:20px;">sempurnakan cantikmu dengan koleksi-koleksi tas terbaru dari kami</p>
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="col2">
+                    <a href="product/jihyobag.html" class="btnProduct">
+                        <img src="images/jihyo bag/model3.jpg" class="col2img" >
+                        <h4>Jihyo Bag</h4>
+                        <p>★★★★☆</p>
+                        <h5>IDR 186000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+                <div class="col2">
+                    <a href="product/suzybag.html" class="btnProduct">
+                        <img src="images/suzy bag/biru.jpg" class="col2img">
+                        <h4>Suzy Bag</h4>
+                        <p>★★★★☆</p>
+                        <h5>IDR 150000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+                <div class="col2">
+                    <a href="product/rubbybag.html" class="btnProduct">
+                        <img src="images/rubby bag/model1.jpg" class="col2img">
+                        <h4>Rubby Bag</h4>
+                        <p>★★★★☆</p>
+                        <h5>IDR 145000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 id="product">Most Popular</h3>
+        <p style="color:black; font-size:16px; text-align:center; line-height:20px;">tampil penuh gaya yang menginspirasi dengan koleksi tas terbaik kami</p>
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="col2">
+                    <a href="product/nataliebag.html" class="btnProduct">
+                        <img src="images/natalie bag/model2.jpg" class="col2img">
+                        <h4>Natalie Bag</h4>
+                        <p>★★★★★</p>
+                        <h5>IDR 195000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+                <div class="col2">
+                    <a href="product/ronabag.html" class="btnProduct">
+                        <img src="images/rona bag/model2.jpg" class="col2img">
+                        <h4>Rona Bag</h4>
+                        <p>★★★★★</p>
+                        <h5>IDR 180000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+                <div class="col2">
+                    <a href="product/aileebag.html" class="btnProduct">
+                        <img src="images/ailee bag/model1.jpg" class="col2img">
+                        <h4>Ailee Bag</h4>
+                        <p>★★★★★</p>
+                        <h5>IDR 165000,-</h5>
+						<a>
+							<img src="images/cart.png" class="btnCart">
+						</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+		<h3 id="product">And Many More</h3>
+		<p style="color:black; font-size:16px; text-align:center; line-height:20px;">beragam tas cantik untuk gaya hidupmu</p>
+		<main>
+			<div class="slide-container">
+				<img src="images/leftarrow.png" alt="left" id="slide-left" class="arrow">
+				
+				<section class="smallcontainer" id="slider">
+					<div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/debbybag.jpg" class="col3img">
+							<h4>Debby Bag</h4>
+							<p>★★★★☆</p>
+							<h5>IDR 125000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>	
+						</a>
+					</div><div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/jisoobag.jpg" class="col3img">
+							<h4>Jisoo Bag</h4>
+							<p>★★★★★</p>
+							<h5>IDR 189000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>
+						</a>
+					</div><div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/candybag.jpg" class="col3img">
+							<h4>Candy Bag</h4>
+							<p>★★★★★</p>
+							<h5>IDR 285000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>
+						</a>
+					</div><div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/yerribag.jpg" class="col3img">
+							<h4>Yerri Bag</h4>
+							<p>★★★★★</p>
+							<h5>IDR 245000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>
+						</a>
+					</div><div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/bellabag.jpg" class="col3img">
+							<h4>Bella Bag</h4>
+							<p>★★★★☆</p>
+							<h5>IDR 165000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>
+						</a>
+					</div><div class="col3">
+						<a class="btnProduct">
+							<img src="images/tasslider/elenabag.jpg" class="col3img">
+							<h4>Bella Bag</h4>
+							<p>★★★★☆</p>
+							<h5>IDR 225000,-</h5>
+							<a>
+								<img src="images/cart.png" class="btnCart">
+							</a>
+						</a>
+					</div>
+				</section>
+				
+				<img src="images/rightarrow.png" alt="right" id="slide-right" class="arrow">
+			</div>
+		</main>
+        <h3 id="product">Our Customer</h3>
+        <p style="color:black; font-size:16px; text-align:center; line-height:20px;">rekomendasi dari orang-orang yang hebat</p>
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="col5">
+                    <img src="images/Desy.jpg">
+                    <h4>Desy</h4><br>
+                    <h5><i>"Saya suka berbelanja di Toko ini, simpel dan harga kompetitif"</i></h5>
+                </div>
+                <div class="col5">
+                    <img src="images/Dinara.jpg">
+                    <h4>Dinara</h4><br>
+                    <h5><i>"Best Bag Store in my country. Beatiful product with much attention to detail, awesome store!"</i></h5>
+                </div>
+                <div class="col5">
+                    <img src="images/Syafira.jpg">
+                    <h4>Syafira</h4><br>
+                    <h5><i>"Pengalaman berbelanja yang luar biasa, saya telah membeli tas dari situs web ini beberapa kali selama berbulan-bulan dan mereka sangat dapat diandalkan."</i></h5>
+                </div>
+            </div>
+        </div>
+        <div style="overflow-x:auto;">
+            <table>
+                <h3 style="color:black; font-size:25px; text-align:center; line-height:40px; text-transform:uppercase; padding-top: 80px;">Payment Status</h3>
+                <thead>
+                    <tr>
+                        <th>Invoice</th>
+                        <th>Name</th>
+                        <th>Start Date</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BAG_01</td>
+                        <td>Desy</td>
+                        <td>1/11/2021</td>
+                        <td>Paid</td>
+                        <td>IDR 540.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>BAG_02</td>
+                        <td>Dinara</td>
+                        <td>1/11/2021</td>
+                        <td>Paid</td>
+                        <td>IDR 375.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>BAG_03</td>
+                        <td>Syafira</td>
+                        <td>3/11/2021</td>
+                        <td>Pending</td>
+                        <td>IDR 540.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>BAG_04</td>
+                        <td>Anindya</td>
+                        <td>4/11/2021</td>
+                        <td>Unpaid</td>
+                        <td>IDR 195.000,-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+        <footer id="contact">
+            <div class="atas">
+                <div style="flex-basis:20%;">
+                    <h4>ABOUT US</h4><br>
+                    <p>NepBag merupakan Toko Tas Indonesia yang bergerak di industri fashion sejak tahun 2021. dengan aneka tas stylish dan trendy menjadikan NepBag pilihan favorit pengguna.</p><br>
+                    <p><i>NepBag is an Indonesian Bag Store that has been engaged in the fashion industry since 2021. With a variety of stylish and trendy bags, NepBag is the user's favorite choice.</i></p><br>
+                </div>
+                <form style="text-align: center;" method="POST" onsubmit="validasi()">
+                    <br>
+                    <h4>DROP US A LINE</h4>
+                    <br>
+                    <div style="text-align: left;">
+                    Your Name (required):<br>
+                    <input type="text" name="nama" id="nama" size="40"><br><br>
+                    Your Email (required):<br>
+                    <input type="text" name="email" id="email" size="40"><br><br>
+                    Subject<br>
+                    <input type="text" name="subject" id="subject" size="40"><br><br>
+                    Your Message<br>
+                    <textarea name="pesan" id="pesan" cols="40" rows="5"></textarea>
+                    <br><br>
+                    <input class="btnSend" type="submit" value="SEND">
+                    </div>
+                </form>
+                <div style="flex-basis:20%;text-align: center;">
+                    <h4>ADDRESS & CONTACT</h4><br>
+                    <address style="display: inline-block; text-align: left;">
+                        PT. Nep <br>
+                        Jl. Progo, no 12<br>
+                        Ungaran<br>
+                        Jawa Tengah<br>
+                        50514<br>
+                        08988736860<br>
+                        customerservice@nepbag.com
+                    </address>
+					<div class="sosmed">
+						<a href="https://twitter.com/hxnmi" class="btnsosmed">
+							<img src="images/twitter.jpg" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+						<a href="https://www.instagram.com/hanifahmi/" class="btnsosmed">
+							<img src="images/ig.png" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+						<a href="https://dinus.ac.id/mahasiswa/A11.2020.12418" class="btnsosmed">
+							<img src="images/udinus.jpg" style="width:50px;height:50px;border-radius:10px;">
+						</a>
+					</div>
+                </div>      
+            </div><br>
+			<div class="bawah">
+				<div>
+					<img src="images/logo.png" style="width: 150px;">
+				</div>
+				<div style="text-align:center;">
+					<div class="jamdigital">
+						<div class="kotak">
+							<p id="jam"></p>
+						</div>
+						<div class="kotak">
+							<p id="menit"></p>
+						</div>
+						<div class="kotak">
+							<p id="detik"></p>
+						</div>
+					</div>
+					<h4 id="tanggal"></h4>
+				</div>
+			</div>
+        </footer>
+        <p style="color: #fff; background: black; padding-left: 80px; padding-right: 80px; padding-top: 10px; padding-bottom: 10px;"><b>Copyright NepBag &copy;. 2021 . Hanif Fahmi - A11.2020.12418. All Rights Reserved</b></p>
+		<script async src="script.js"></script>
+    </body>
+</html>
